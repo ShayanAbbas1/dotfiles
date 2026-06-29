@@ -1,0 +1,4 @@
+# OpenCode (local AI coding agent)
+.opencode/
+opencode.json
+opencode.jsonc
