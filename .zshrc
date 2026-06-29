@@ -154,3 +154,5 @@ alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 gnb() {
   git checkout "$1" && git pull origin "$1" && git checkout -b "$2"
 }
+
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7' # 'fg=7' uses the 7th ANSI color (white)
