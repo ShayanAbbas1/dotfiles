@@ -149,8 +149,8 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Git branch helper
-# Usage: gcb staging my-feature  → pull staging, create my-feature
-#        gcb main hotfix-123     → pull main, create hotfix-123
-gcb() {
+# Usage: gnb staging my-feature  → pull staging, create my-feature
+#        gnb main hotfix-123     → pull main, create hotfix-123
+gnb() {
   git checkout "$1" && git pull origin "$1" && git checkout -b "$2"
 }
